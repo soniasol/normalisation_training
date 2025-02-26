@@ -1,15 +1,15 @@
-Identifiant,Pages,Lignes,Nom du fichier,Imprimeur,Titre bref,Auteur,Date,Lieu,Lien fac-similé numérique,Lieu de conservation
-CRRPV01,415,,CRRPV01_Premiere_union.tsv,Pierre de Vingle,Premiere union,Herman Bodius,1533,[Genève],https://doi.org/10.3931/e-rara-12757,Genève MHR K Buc 6(1)
-CRRPV03,128,,CRRPV03_Instruction_des_enfans.tsv,Pierre de Vingle,Instruction des enfans,[Pierre Robert Olivétan],1533,Genève,https://doi.org/10.3931/e-rara-6933,Genève BGE Bd 1477
-CRRPV04,29,,CRRPV04_Grans_pardons_et_indulgences.tsv,Pierre de Vingle,Grans pardons et indulgences,[Anonyme],[1533?],[Genève],https://doi.org/10.3931/e-rara-33167,Neuchâtel BPU A.F. C 30
-CRRPV08,46,,CRRPV08_Livre_des_marchans.tsv,Pierre de Vingle,Livre des marchans,[Antoine Marcourt],1533,[Neuchâtel],https://doi.org/10.3931/e-rara-539,Zurich ZB Res 1330
-CRRPV09,87,,CRRPV09_Maniere_et_fasson.tsv,Pierre de Vingle,Maniere et fasson ,[Guillaume Farel],1533,Neuchâtel,https://doi.org/10.3931/e-rara-5945,Genève BGE Bd 1474
-CRRPV12,48,,CRRPV12_Plusieurs_chansons.tsv,Pierre de Vingle,Plusieurs belles et bonnes chansons,[Matthieu Malingre],1533,[Neuchâtel],https://doi.org/10.3931/e-rara-6934, Genève BGE Bd 1475
-CRRPV13,48,,CRRPV13_Noelz_nouveaulx.tsv,Pierre de Vingle,Noelz nouveaulx,[Matthieu Malingre],[1533?],[Neuchâtel],https://doi.org/10.3931/e-rara-577,Zurich ZB Res 1332
-CRRPV16,16,,CRRPV16_Chansons_nouvelles.tsv,Pierre de Vingle,Chansons nouvelles,[Matthieu Malingre?],[1534?],[Neuchâtel],https://doi.org/10.3931/e-rara-576,Zurich ZB Res 1327
-CRRPV19,48,,CRRPV19_Faictz.tsv,Pierre de Vingle,Faictz de Jesus Christ et du Pape,[Anonyme],[1534?],[Neuchâtel],/,Paris BPF A 1001
-CRRPV20,1,,CRRPV20_Articles_veritables.tsv,Pierre de Vingle,Articles veritables,[Antoine Marcourt],[1534],[Neuchâtel],https://doc.rero.ch/record/20834,Neuchâtel BPU ZQ 143
-CRRPV21,78,,CRRPV21_Petit_traicte.tsv,Pierre de Vingle,Petit traicte,[Antoine Marcourt],1534,[Neuchâtel],https://dx.doi.org/10.3931/e-rara-6082,Neuchâtel BPU A.F. C 49 D
-CRRPV22,96,,CRRPV22_Declaration_de_la_messe.tsv,Pierre de Vingle,Declaration de la messe,[Antoine Marcourt],[1534],[Neuchâtel],https://doi.org/10.3931/e-rara-33158,Neuchâtel BPU A.F. C 49 B
-CRRPV23,208,,CRRPV23_Summaire_et_briefve_declaration.tsv,Pierre de Vingle,Summaire et briefve declaration,[Guillaume Farel],1534,[Neuchâtel],https://doi.org/10.3931/e-rara-5944,Genève BGE Bc 3379
-CRRPV25,93,,CRRPV25_Letres_certaines.tsv,Pierre de Vingle,Letres certaines,[Guillaume Farel],[1534],[Neuchâtel],https://digitale-sammlungen.de/en/view/bsb10194057,Munich SB Polem. 8
+Identifiant,Pages,Lignes,file,Sub-corpus,Imprimeur,Titre bref,Auteur,Date,Lieu,Lien fac-similé numérique,Lieu de conservation
+CRRPV01,415,,CRRPV01_Premiere_union.tsv,1-standard,Pierre de Vingle,Premiere union,Herman Bodius,1533,[Genève],https://doi.org/10.3931/e-rara-12757,Genève MHR K Buc 6(1)
+CRRPV03,128,,CRRPV03_Instruction_des_enfans.tsv,1-standard,Pierre de Vingle,Instruction des enfans,[Pierre Robert Olivétan],1533,Genève,https://doi.org/10.3931/e-rara-6933,Genève BGE Bd 1477
+CRRPV04,29,,CRRPV04_Grans_pardons_et_indulgences.tsv,1-standard,Pierre de Vingle,Grans pardons et indulgences,[Anonyme],[1533?],[Genève],https://doi.org/10.3931/e-rara-33167,Neuchâtel BPU A.F. C 30
+CRRPV08,46,,CRRPV08_Livre_des_marchans.tsv,1-standard,Pierre de Vingle,Livre des marchans,[Antoine Marcourt],1533,[Neuchâtel],https://doi.org/10.3931/e-rara-539,Zurich ZB Res 1330
+CRRPV09,87,,CRRPV09_Maniere_et_fasson.tsv,1-standard,Pierre de Vingle,Maniere et fasson ,[Guillaume Farel],1533,Neuchâtel,https://doi.org/10.3931/e-rara-5945,Genève BGE Bd 1474
+CRRPV12,48,,CRRPV12_Plusieurs_chansons.tsv,1-standard,Pierre de Vingle,Plusieurs belles et bonnes chansons,[Matthieu Malingre],1533,[Neuchâtel],https://doi.org/10.3931/e-rara-6934, Genève BGE Bd 1475
+CRRPV13,48,,CRRPV13_Noelz_nouveaulx.tsv,1-standard,Pierre de Vingle,Noelz nouveaulx,[Matthieu Malingre],[1533?],[Neuchâtel],https://doi.org/10.3931/e-rara-577,Zurich ZB Res 1332
+CRRPV16,16,,CRRPV16_Chansons_nouvelles.tsv,1-standard,Pierre de Vingle,Chansons nouvelles,[Matthieu Malingre?],[1534?],[Neuchâtel],https://doi.org/10.3931/e-rara-576,Zurich ZB Res 1327
+CRRPV19,48,,CRRPV19_Faictz.tsv,1-standard,Pierre de Vingle,Faictz de Jesus Christ et du Pape,[Anonyme],[1534?],[Neuchâtel],/,Paris BPF A 1001
+CRRPV20,1,,CRRPV20_Articles_veritables.tsv,1-standard,Pierre de Vingle,Articles veritables,[Antoine Marcourt],[1534],[Neuchâtel],https://doc.rero.ch/record/20834,Neuchâtel BPU ZQ 143
+CRRPV21,78,,CRRPV21_Petit_traicte.tsv,1-standard,Pierre de Vingle,Petit traicte,[Antoine Marcourt],1534,[Neuchâtel],https://dx.doi.org/10.3931/e-rara-6082,Neuchâtel BPU A.F. C 49 D
+CRRPV22,96,,CRRPV22_Declaration_de_la_messe.tsv,1-standard,Pierre de Vingle,Declaration de la messe,[Antoine Marcourt],[1534],[Neuchâtel],https://doi.org/10.3931/e-rara-33158,Neuchâtel BPU A.F. C 49 B
+CRRPV23,208,,CRRPV23_Summaire_et_briefve_declaration.tsv,1-standard,Pierre de Vingle,Summaire et briefve declaration,[Guillaume Farel],1534,[Neuchâtel],https://doi.org/10.3931/e-rara-5944,Genève BGE Bc 3379
+CRRPV25,93,,CRRPV25_Letres_certaines.tsv,1-standard,Pierre de Vingle,Letres certaines,[Guillaume Farel],[1534],[Neuchâtel],https://digitale-sammlungen.de/en/view/bsb10194057,Munich SB Polem. 8

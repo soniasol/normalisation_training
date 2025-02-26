@@ -1,10 +1,13 @@
 #!/usr/sfw/bin/python
 # -*- coding: utf-8 -*-
 
-import csv, glob, os, re, sys  # Import necessary modules for file handling and system operations
+# Run the script with: python scripts/split_ss_1.py
 
-# Get the absolute path of the directory where the script is located
-folder = os.path.abspath(os.path.dirname(sys.argv[0]))
+# Import necessary modules for file handling and system operations
+import csv, glob, os, re, sys
+
+# Get the path of the directory
+folder = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), ".."))
 
 # Define how to split lines from each text file
 # "1-standard" is the only category in this case
@@ -35,15 +38,12 @@ testFolder = os.path.join(os.path.join(folder, "split"), "test")
 os.system("mkdir " + testFolder)
 
 
-# HERE
-
-
 # Treat the corpus
 fileNb = 0  # Initialize file counter
 
-# Open the metadata file "TableOfContent.tsv" which contains information about the corpus
-with open(os.path.join(folder, "TableOfContent.tsv"), newline='', encoding="utf-8") as metadataFile:
-    reader = csv.DictReader(metadataFile, delimiter='\t', quotechar='"')  # Read as dictionary
+# Open the metadata file "table.csv" which contains information about the corpus
+with open(os.path.join(folder, "table.csv"), newline='', encoding="utf-8") as metadataFile:
+    reader = csv.DictReader(metadataFile, delimiter=',', quotechar='"')  # Read as dictionary
 
     # Loop through each row in the metadata file (each row represents a text file to process)
     for row in reader:
@@ -77,11 +77,19 @@ with open(os.path.join(folder, "TableOfContent.tsv"), newline='', encoding="utf-
                 for line in spamreader:
                     inputLineNb += 1  # Increment input line count
                     
-                    # Use the first column (original word) if no correction exists
-                    subset = subcorpora[row["Sub-corpus"]][outputLineNb % len(subcorpora[row["Sub-corpus"]])]
+                    if len(line) > 2 and len(line[2])>0 and line[2]!=" ":
+                  # if there exist a third column which is neither empty nor a single whitespace
+                  # it should contain a corrected version of the erroneous first column in the original edition:
+                  # use this third column instead of the first column for this line!
+                       print("Line " + str(inputLineNb) + " contains a typo in the original version: we will use the corrected version!")
+                       outputFiles[subcorpora[row["Sub-corpus"]][outputLineNb%10]].writerow([line[2],line[1].replace("'","’")])
+                       outputLineNb += 1
 
-                    # Write the original word and normalized second column
-                    outputFiles[subset].writerow([line[0], line[1].replace("'", "’")])
+                    else:
+                  # add the current line to the right file,
+                  # replacing ' by ’ in the normalized column
+                      outputFiles[subcorpora[row["Sub-corpus"]][outputLineNb%10]].writerow([line[0],line[1].replace("'","’")])
+                      outputLineNb += 1
 
                     outputLineNb += 1  # Increment output line count
 

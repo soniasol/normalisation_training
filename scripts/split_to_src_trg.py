@@ -3,6 +3,8 @@ import shutil
 import sys
 import argparse
 
+# Run the script with: python scripts/split_to_src_trg.py
+
 #For colab or other notebook
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--colab", action='store_true', required=False, default='', help="Use this if you use colab")
@@ -12,7 +14,7 @@ if args.colab:
     folder="/content/FreEMnorm/"
     print("Your are using colab!")
 else:
-    folder = os.path.abspath(os.path.dirname(sys.argv[0]))
+    folder = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), ".."))
     print("Your are not using colab!")
 
 
