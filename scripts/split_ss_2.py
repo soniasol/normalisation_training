@@ -7,7 +7,7 @@ folder = "/Users/sonia/..."
 folder = "..."
 
 # Read metadata file using pandas
-table_of_content_path = os.path.join(folder, "TableOfContent.tsv")
+table_of_content_path = os.path.join(folder, "table.csv")
 metadata_df = pd.read_csv(table_of_content_path, delimiter='\t', quotechar='"')
 
 fileNb = 0  # File counter to keep track of processed files
