@@ -22,7 +22,8 @@
 | **Test**  | 15%          | 3 lines                 |
 
 **Pattern in the Script**
-```python
+```
+python
 subcorpora = {
     "1-standard": [
         "train", "train", "train", "train", "test",   # First 5 lines: 4 to train, 1 to test
@@ -31,6 +32,7 @@ subcorpora = {
         "train", "dev", "train", "test"              # Last 5 lines: 2 to train, 1 to dev, 1 to test
     ]
 }
+```
 
 - Split Ratio 80-10-10
 
@@ -41,11 +43,12 @@ subcorpora = {
 | **Test**  | 10%          | 1 lines                 |
 
 **Pattern in the Script**
-```python
+```
+python
 subcorpora = {
     "1-standard": [
         "train", "train", "train", "train", "train", "train", "train", "train", "dev", "test",
         "train", "train", "train", "train", "train", "train", "train", "train", "dev", "test"
     ]
 }
-
+```
