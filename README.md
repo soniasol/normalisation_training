@@ -55,3 +55,21 @@ subcorpora = {
 ```
 
 - Option 3 : Split Ratio 70-15-15
+
+Train: 90% (18 lines per 20)
+Dev: 10% (2 lines per 20)
+
+No "test" labels anymore, ensuring only "train" and "dev" exist.
+Every 10 lines contain 9 "train" and 1 "dev" for a consistent 90-10 split.
+
+**Pattern in the Script**
+```
+subcorpora = {
+    "1-standard": [
+        "train", "train", "train", "train", "train",  # First 5 lines: 5 to train
+        "train", "train", "train", "dev", "train",    # Next 5 lines: 4 to train, 1 to dev
+        "train", "train", "train", "train", "train",  # Next 5 lines: 5 to train
+        "train", "train", "train", "dev", "train"     # Last 5 lines: 4 to train, 1 to dev
+    ]
+}
+```
