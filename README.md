@@ -13,7 +13,8 @@
 
 ## 3. Create the Data Split
 - Use one or more scripts to divide the corpus into appropriate training, validation, and test sets.
-- Split Ratio 70-15-15
+
+- Option 1 : Split Ratio 70-15-15
 
 | **Split** | **Proportion** | **Occurrences per 20 lines** |
 |-----------|--------------|--------------------------|
@@ -34,7 +35,7 @@ subcorpora = {
 }
 ```
 
-- Split Ratio 80-10-10
+- Option 2 : Split Ratio 80-10-10
 
 | **Split** | **Proportion** | **Occurrences per 10 lines** |
 |-----------|--------------|--------------------------|
@@ -52,3 +53,5 @@ subcorpora = {
     ]
 }
 ```
+
+- Option 3 : Split Ratio 70-15-15
