@@ -14,9 +14,9 @@
   - One column for the normalized lines.
 
 ## 3. Create the Data Split
-- Use one or more scripts to divide the corpus into appropriate training, validation, and test sets.
+- Use scripts to divide the corpus into appropriate training, validation, and test sets.
 
-- Option 1 : Split Ratio 70-15-15
+**Option 1 : Split Ratio 70-15-15**
 
 | **Split** | **Proportion** | **Occurrences per 20 lines** |
 |-----------|--------------|--------------------------|
@@ -24,7 +24,7 @@
 | **Dev**   | 15%          | 3 lines                 |
 | **Test**  | 15%          | 3 lines                 |
 
-**Pattern in the Script**
+Pattern in the Script
 ```
 python
 subcorpora = {
