@@ -8,7 +8,7 @@
 - Collect and process all texts to create the corpus: 15 texts.
   - with data split's option 3 (split ratio 90-10):
     - train+dev (90-10): 14 texts, 1.341 pages, 35.450 lines;
-    - test: one text, 96 pages, 2.485 lines.
+    - test (`CRRPV11_Moralite.tsv`): one text, 96 pages, 2.485 lines.
 - Each processed text is stored in a TSV file (`.tsv`).
 - Each TSV file contains two columns:
   - One column for the original lines of text.
