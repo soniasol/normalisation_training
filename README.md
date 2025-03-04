@@ -5,9 +5,10 @@
 - Ensure that one column contains the filename of each text (e.g., `CRRPV16_Chansons_nouvelles.tsv`).
 
 ## 2. Build the Corpus
-- Collect and process all texts to create the corpus:
-  - train+dev: 14 texts, 1.341 pages, 35.450 lines;
-  - test: one text, 96 pges.
+- Collect and process all texts to create the corpus: 15 texts.
+  - with data split's option 3 (split ratio 90-10)
+    - train+dev: 14 texts, 1.341 pages, 35.450 lines;
+    - test: one text, 96 pages.
 - Each processed text is stored in a TSV file (`.tsv`).
 - Each TSV file contains two columns:
   - One column for the original lines of text.
