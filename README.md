@@ -8,8 +8,8 @@
 - Collect and process all texts to create the corpus :
   - train+dev : 14 texts, 1.341 pages, 35.450 lines;
   - test : one text, 96 pges.
-- Each processed text should be stored in a TSV file (`.tsv`).
-- Each TSV file must contain two columns:
+- Each processed text is stored in a TSV file (`.tsv`).
+- Each TSV file contains two columns:
   - One column for the original lines of text.
   - One column for the normalized lines.
 
