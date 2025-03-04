@@ -61,10 +61,11 @@ subcorpora = {
 
 **Option 3: Split Ratio 90-10**
 
-Train: 90% (18 lines per 20)
-Dev: 10% (2 lines per 20)
+- Train: 90% (18 lines per 20)
+- Dev: 10% (2 lines per 20)
 
 No "test" labels, ensuring only "train" and "dev" exist.
+
 Every 10 lines contain 9 "train" and 1 "dev" for a consistent 90-10 split.
 
 ```
