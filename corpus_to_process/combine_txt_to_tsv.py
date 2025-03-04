@@ -1,9 +1,9 @@
 import csv
 
 # File paths
-orig_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus/to_process/test-orig.txt"
-norm_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus/to_process/test-norm.txt"
-output_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus/processed/combined_output.tsv"
+orig_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus_to_process/to_process/test-orig.txt"
+norm_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus_to_process/to_process/test-norm.txt"
+output_file = "/Users/sonia/Documents/GitHub/normalisation_training/corpus_to_process/processed/combined_output.tsv"
 
 # Read the original and normalized files
 with open(orig_file, "r", encoding="utf-8") as f_orig, open(norm_file, "r", encoding="utf-8") as f_norm:

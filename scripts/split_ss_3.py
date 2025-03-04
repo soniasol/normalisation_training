@@ -34,10 +34,6 @@ os.system("mkdir " + trainFolder)
 devFolder = os.path.join(os.path.join(folder, "split"), "dev")
 os.system("mkdir " + devFolder)
 
-testFolder = os.path.join(os.path.join(folder, "split"), "test")
-os.system("mkdir " + testFolder)
-
-
 # Treat the corpus
 fileNb = 0  # Initialize file counter
 
@@ -64,11 +60,8 @@ with open(os.path.join(folder, "table.csv"), newline='', encoding="utf-8") as me
                 csvDevFile = open(os.path.join(devFolder, row["file"]), 'w', newline='', encoding="utf-8")
                 devWriter = csv.writer(csvDevFile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-                csvTestFile = open(os.path.join(testFolder, row["file"]), 'w', newline='', encoding="utf-8")
-                testWriter = csv.writer(csvTestFile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
                 # Output files dictionary for easy reference
-                outputFiles = {"train": trainWriter, "dev": devWriter, "test": testWriter}
+                outputFiles = {"train": trainWriter, "dev": devWriter}
 
                 inputLineNb = 0  # Track the number of input lines processed
                 outputLineNb = 0  # Track the number of output lines written
@@ -96,7 +89,6 @@ with open(os.path.join(folder, "table.csv"), newline='', encoding="utf-8") as me
                 # Close all output files after processing
                 csvTrainFile.close()
                 csvDevFile.close()
-                csvTestFile.close()
 
         except (OSError):
             # Handle errors if the file is not found
