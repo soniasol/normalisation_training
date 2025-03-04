@@ -14,7 +14,11 @@
   - One column for the normalized lines.
 
 ## 3. Create the Data Split
-- Use scripts to divide the corpus into appropriate training, validation, and test sets.
+- Use the scripts to divide the corpus into appropriate training, validation, and test sets.
+- In "data" you'll find the final split in the following format :
+  - train.src and train.trg
+  - dev.src and dev.trg
+  - test.src and test.trg
 
 **Option 1: Split Ratio 70-15-15**
 
